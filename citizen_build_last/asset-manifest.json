@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c972406a.css",
-    "main.js": "/static/js/main.da238e6b.js",
+    "main.css": "/static/css/main.ed703ad1.css",
+    "main.js": "/static/js/main.fb8852ee.js",
     "static/js/787.bf723ff8.chunk.js": "/static/js/787.bf723ff8.chunk.js",
     "static/media/Document.pdf": "/static/media/Document.960ad71044203cbdb1d0.pdf",
     "static/media/welcomevid.mp4": "/static/media/welcomevid.6ee09c15d8924fe2ac6d.mp4",
@@ -20,6 +20,7 @@
     "static/media/pt.webp": "/static/media/pt.3e15de4539e4d9334ac0.webp",
     "static/media/faq.png": "/static/media/faq.7d1c32a58ed9e68e98b7.png",
     "static/media/question.png": "/static/media/question.c103e9d8962050f59b58.png",
+    "static/media/second.jpg": "/static/media/second.d68112bf05a897c8500e.jpg",
     "static/media/ac4.png": "/static/media/ac4.cd88ea2b08104d086cc0.png",
     "static/media/adlogo.png": "/static/media/adlogo.4c8c04c0d82518a0968b.png",
     "static/media/pin.png": "/static/media/pin.f156cc10a821c9ee8ba2.png",
@@ -37,6 +38,7 @@
     "static/media/user.png": "/static/media/user.c69c03fa0b202db5abfa.png",
     "static/media/check.png": "/static/media/check.3681c0e66d788244dcff.png",
     "static/media/success.png": "/static/media/success.e39fa5f54a849d8fc1a5.png",
+    "static/media/image2.png": "/static/media/image2.8340cb572bdd7278a088.png",
     "static/media/notfound1.svg": "/static/media/notfound1.d22e938221b9dd2550181b7747fb25fe.svg",
     "static/media/concession.png": "/static/media/concession.af1d487f2f1461efbfe4.png",
     "static/media/border_both2.svg": "/static/media/border_both2.661e4e588554b7eefbd73e627a6158dc.svg",
@@ -48,6 +50,7 @@
     "static/media/re.png": "/static/media/re.eecf18f19538d94ee950.png",
     "static/media/pointer.png": "/static/media/pointer.837ed91eb7ad3ddb11ba.png",
     "static/media/ringing.png": "/static/media/ringing.482c170719aae7b1afe8.png",
+    "static/media/image1.jpg": "/static/media/image1.aa3f9d0bc38cd9acae84.jpg",
     "static/media/rate.png": "/static/media/rate.694885442ff949967353.png",
     "static/media/division.png": "/static/media/division.c4bd97c26c26da4a408d.png",
     "static/media/brief.png": "/static/media/brief.87b997b490b407fcc626.png",
@@ -65,12 +68,12 @@
     "static/media/notfound2.svg": "/static/media/notfound2.344e609c4d04df0f4126c6215595fbf5.svg",
     "static/media/not.svg": "/static/media/not.90151bfa7070c8015f842db4047d289c.svg",
     "index.html": "/index.html",
-    "main.c972406a.css.map": "/static/css/main.c972406a.css.map",
-    "main.da238e6b.js.map": "/static/js/main.da238e6b.js.map",
+    "main.ed703ad1.css.map": "/static/css/main.ed703ad1.css.map",
+    "main.fb8852ee.js.map": "/static/js/main.fb8852ee.js.map",
     "787.bf723ff8.chunk.js.map": "/static/js/787.bf723ff8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c972406a.css",
-    "static/js/main.da238e6b.js"
+    "static/css/main.ed703ad1.css",
+    "static/js/main.fb8852ee.js"
   ]
 }
