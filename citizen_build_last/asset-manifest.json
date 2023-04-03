@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c537ab1d.css",
-    "main.js": "/static/js/main.701d99c4.js",
+    "main.css": "/static/css/main.c3643f2d.css",
+    "main.js": "/static/js/main.58c8fa6f.js",
     "static/js/787.bf723ff8.chunk.js": "/static/js/787.bf723ff8.chunk.js",
     "static/media/Document.pdf": "/static/media/Document.960ad71044203cbdb1d0.pdf",
     "static/media/welcomevid.mp4": "/static/media/welcomevid.6ee09c15d8924fe2ac6d.mp4",
+    "static/media/cm.png": "/static/media/cm.c8096ee45dfc24429085.png",
     "static/media/payBg.jpg": "/static/media/payBg.a9db13f58c7fc56ecee2.jpg",
     "static/media/Lobster.ttf": "/static/media/Lobster.03c38496322925fec242.ttf",
     "static/media/rmclogo.png": "/static/media/rmclogo.d1d9f229f3fd3b66c19c.png",
@@ -68,12 +69,12 @@
     "static/media/notfound2.svg": "/static/media/notfound2.344e609c4d04df0f4126c6215595fbf5.svg",
     "static/media/not.svg": "/static/media/not.90151bfa7070c8015f842db4047d289c.svg",
     "index.html": "/index.html",
-    "main.c537ab1d.css.map": "/static/css/main.c537ab1d.css.map",
-    "main.701d99c4.js.map": "/static/js/main.701d99c4.js.map",
+    "main.c3643f2d.css.map": "/static/css/main.c3643f2d.css.map",
+    "main.58c8fa6f.js.map": "/static/js/main.58c8fa6f.js.map",
     "787.bf723ff8.chunk.js.map": "/static/js/787.bf723ff8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c537ab1d.css",
-    "static/js/main.701d99c4.js"
+    "static/css/main.c3643f2d.css",
+    "static/js/main.58c8fa6f.js"
   ]
 }
