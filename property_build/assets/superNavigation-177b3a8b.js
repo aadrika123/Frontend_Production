@@ -1,0 +1,1 @@
+const n="/assets/search-2943bb06.png";function o(e,s,a){let t="/property";e.ctrlKey?window.open(`${t}${s}`,"_blank"):a(s)}function r(e){window.history.pushState({prevUrl:e},"",e)}export{o as a,r as c,n as s};
