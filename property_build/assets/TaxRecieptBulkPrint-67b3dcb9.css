@@ -1,0 +1,1 @@
+@media print{*{margin:0;padding:0}button,body{visibility:hidden}.receipt{height:100vh;page-break-after:always;page-break-before:always}#receipts-container,#receipts-container *{visibility:visible!important;page-break-after:always!important}}
