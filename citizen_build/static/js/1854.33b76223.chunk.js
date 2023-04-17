@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcitizen_landing=self.webpackChunkcitizen_landing||[]).push([[1854,4232,9140],{20648:function(e,n,t){t.r(n);t(72791);var a=t(57689),i=t(19362),c=t(80184);n.default=function(){return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)(a.Z5,{children:(0,c.jsx)(a.AW,{path:"/property-tax-cal",element:(0,c.jsx)(i.default,{})})})})}}}]);
-//# sourceMappingURL=1854.33b76223.chunk.js.map
