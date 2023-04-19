@@ -1,1 +1,62 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/logo1.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><script src="https://checkout.razorpay.com/v1/checkout.js"></script><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="src/css/style.css"><link rel="stylesheet" href="src/css/customizer.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><title>React App</title><script defer="defer" src="/static/js/main.7b64de26.js"></script><link href="/static/css/main.1164d780.css" rel="stylesheet"></head><body class="font-sans text-base font-normal" style="background-color:#f6f5ff;overflow-x:hidden;height:100vh;overflow-y:hidden" id="body"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><div id="modal" style="z-index:1000"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo1.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <script type="module" crossorigin src="/assets/index-28e798bd.js"></script>
+  <link rel="stylesheet" href="/assets/index-bbba7073.css">
+</head>
+
+<body class="font-sans text-base font-normal"
+  style="background-color: #F6F5FF; overflow-x: hidden;height: 100vh;overflow-y: hidden;" id="body">
+  <div id="root"></div>
+  <div id="modal"></div>
+  <button value="" id="printClick" onclick="printData()" style="visibility:hidden">print click</button>
+  <button  id="hideButton" onclick="hidePrintButton()" style="visibility:hidden">hide button</button>
+  
+
+  <script>
+    const dummyText = "<nc>JUIDCO Property Payment Receipt</nc><br />" +
+      "<n>-----------------------------------------</n><br />" +
+      "<n>Date           :  </n><br />" +
+      "<n>POS ID         :  XXXXXXXXXXX</n><br />" +
+      "<n>Ward No.       :  </n><br />" +
+      "<n>Transaction No.:  </n><br />" +
+      "<n>Holding No.    :  </n><br />" +
+      "<n>Citizen Name    :  Talib con</n><br />" +
+      "<n>-----------------------------------------</n><br />" +
+      "<n>Amount Paid   :  </n><br />" +
+      "<n>Paid  Upto    :  </n><br />" +
+      "<n>Payment Mode  :  </n><br />" +
+      "<n>------------------------------------------</n><br />" +
+      "<n>TC Name        :   </n><br />" +
+      "<n>Mobile No.     :   </n><br />" +
+      "<n>Please keep this Bill For Future Reference</n><br />" +
+      "<n></n><br />" +
+      "<n></n><br />" +
+      "<n></n><br />" +
+      "<n></n><br />" +
+      "<n></n><br />"
+
+    function fun(event) {
+      event.preventDefault()
+      return "hello"
+    }
+   
+    function printData() {
+      let printData =  document.getElementById('printClick').value 
+      // let printData =  dummyText 
+      AndroidInterface.btPrinter(printData)
+    }
+    function hidePrintButton() {
+      AndroidInterface.btPrinterHide()
+    }
+
+  </script>
+ 
+</body>
+
+</html>
