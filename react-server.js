@@ -20,6 +20,7 @@ app.use(express.static("dashboard_build"));
 app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
 app.use(express.static("dashboard_property_build"));
+app.use(express.static("swm_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -75,6 +76,12 @@ app.get("/propdashboard", (req, res) => {
 });
 app.get("/propdashboard/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dashboard_property_build", "index.html"));
+});
+app.get("/swm", (req, res) => {
+  res.sendFile(path.join(__dirname, "swm_build", "index.html"));
+});
+app.get("/swm/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "swm_build", "index.html"));
 });
 
 // start express server on port 80
