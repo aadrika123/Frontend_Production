@@ -1,1 +1,0 @@
-import{r as e,c as o,j as t,N as a,O as r}from"./index-cfc403bf.js";const c=s=>(e.useContext(o),localStorage.getItem("token")==null||localStorage.getItem("token")==""||localStorage.getItem("token")==null?t(a,{to:"/"}):t(r,{}));export{c as default};
