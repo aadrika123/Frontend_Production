@@ -1,1 +1,0 @@
-import{a as e,D as n,P as u}from"./index-c9982ed4.js";function c(s){const{api_logout:t}=u();e.post(t,{},n()).then(function(o){console.log("logout response via usesetlogout.",o)}).catch(function(o){console.log("logout success...")}).finally(()=>{s()})}export{c as u};
