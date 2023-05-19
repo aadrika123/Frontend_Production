@@ -1,0 +1,1 @@
+import{b as r}from"./index-9cf760c5.js";import{B as e}from"./BeatLoader-766c6c44.js";const s=()=>r("div",{className:"h-screen w-screen absolute overflow-hidden backdrop-blur-sm",children:r(e,{className:"absolute z-10 top-[50%] right-[50%] backdrop-blur-sm"})});export{s as default};
