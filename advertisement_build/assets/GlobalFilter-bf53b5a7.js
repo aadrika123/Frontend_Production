@@ -1,1 +1,0 @@
-import{e as t,F as s,j as n}from"./index-ec09f15e.js";function l({filter:e,setFilter:r}){return t(s,{children:["Search : "," ",n("input",{className:"border-2 border-gray-600 px-2 bg-gray-200",type:"text",value:e||"",onChange:a=>r(a.target.value)})]})}export{l as G};
