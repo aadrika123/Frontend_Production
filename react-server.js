@@ -21,6 +21,7 @@ app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
 app.use(express.static("dashboard_property_build"));
 app.use(express.static("swm_build"));
+app.use(express.static("csms_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -83,7 +84,12 @@ app.get("/swm", (req, res) => {
 app.get("/swm/*", (req, res) => {
   res.sendFile(path.join(__dirname, "swm_build", "index.html"));
 });
-
+app.get("/csms", (req, res) => {
+  res.sendFile(path.join(__dirname, "csms_build", "index.html"));
+});
+app.get("/csms/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "csms_build", "index.html"));
+});
 // start express server on port 80
 app.listen(80, () => {
   console.log("server started on port 80");
