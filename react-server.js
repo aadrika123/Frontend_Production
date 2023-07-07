@@ -92,10 +92,10 @@ app.get("/csms", (req, res) => {
 app.get("/csms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "csms_build", "index.html"));
 });
-app.get("/waterTanker", (req, res) => {
+app.get("/agency", (req, res) => {
   res.sendFile(path.join(__dirname, "tanker_admin_build", "index.html"));
 });
-app.get("/waterTanker/*", (req, res) => {
+app.get("/agency/*", (req, res) => {
   res.sendFile(path.join(__dirname, "tanker_admin_build", "index.html"));
 });
 app.get("/tankerCitizen", (req, res) => {
