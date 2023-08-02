@@ -24,6 +24,7 @@ app.use(express.static("swm_build"));
 app.use(express.static("csms_build"));
 app.use(express.static("tanker_admin_build"));
 app.use(express.static("tanker_citizen_build"));
+app.use(express.static("mgmt_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -91,6 +92,12 @@ app.get("/csms", (req, res) => {
 });
 app.get("/csms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "csms_build", "index.html"));
+});
+app.get("/fee-mgmt", (req, res) => {
+  res.sendFile(path.join(__dirname, "mgmt_build", "index.html"));
+});
+app.get("/fee-mgmt/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "mgmt_build", "index.html"));
 });
 app.get("/agency", (req, res) => {
   res.sendFile(path.join(__dirname, "tanker_admin_build", "index.html"));
