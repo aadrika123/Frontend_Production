@@ -1,0 +1,1 @@
+function n(){let e=JSON.parse(window.sessionStorage.getItem("loginInfo")),t=e==null?void 0:e.token;return console.log(t),{headers:{Authorization:`Bearer ${t}`,Accept:"application/json","Content-Type":"multipart/form-data"}}}export{n as A};
