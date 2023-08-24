@@ -26,6 +26,7 @@ app.use(express.static("tanker_admin_build"));
 app.use(express.static("tanker_citizen_build"));
 app.use(express.static("fee_mgmt_build"));
 app.use(express.static("csms_madhupur_build"));
+app.use(express.static("404"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -118,6 +119,13 @@ app.get("/madhupur", (req, res) => {
 app.get("/madhupur/*", (req, res) => {
   res.sendFile(path.join(__dirname, "csms_madhupur_build", "index.html"));
 });
+
+// Catch-all route handler for unmatched routes
+app.get("*", (req, res) => {
+  // Send a 404 response for any unmatched routes
+  res.status(404).sendFile(path.join(__dirname, "./404/404.html"));
+});
+
 // start express server on port 80
 app.listen(80, () => {
   console.log("server started on port 80");
