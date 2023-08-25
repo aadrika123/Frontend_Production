@@ -166,9 +166,9 @@ app.get("/reporting/*", (req, res) => {
 });
 
 // ═════════════════║ 404 ROUTE
-app.get("*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "./404/404.html"));
-});
+// app.get("*", (req, res) => {
+//   res.status(404).sendFile(path.join(__dirname, "./404/404.html"));
+// });
 
 // ═════════════════║🔰 THIS CODE BLOCK STARTS THE SERVER AT PORT 80 🔰║══════════════════════
 app.listen(80, () => {
