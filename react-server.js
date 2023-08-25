@@ -27,6 +27,7 @@ app.use(express.static("tanker_citizen_build"));
 app.use(express.static("fee_mgmt_build"));
 app.use(express.static("csms_madhupur_build"));
 app.use(express.static("marriage_build"));
+app.use(express.static("reporting"));
 app.use(express.static("404"));
 
 //actual routes
