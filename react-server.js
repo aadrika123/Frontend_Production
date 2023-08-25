@@ -31,6 +31,7 @@ app.use(express.static("tanker_admin_build"));
 app.use(express.static("tanker_citizen_build"));
 app.use(express.static("marriage_build"));
 app.use(express.static("reporting_build"));
+app.use(express.static("well-known"));
 
 app.use(express.static("csms_build"));
 app.use(express.static("fee_mgmt_build"));
