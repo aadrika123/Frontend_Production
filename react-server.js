@@ -1,16 +1,20 @@
-// successfull react serve working code for react
+//////////////////////////////////////////////////////////////////////////////////////
+
+//    Author - Talib Hussain
+//    Version - 1.0
+//    Date - 06 june 2022
+//    Revision - 1
+//    Project - JUIDCO
+//    Component  -  react-server.js
+//    DESCRIPTION -  THIS IS CONFIGURATION FILE FOR THE SERVER FOR REACT PRODUCTION BUILD FILES
+//                     1. CONTAINING 12 BUILD FIELS FOR JUIDCO PROJECT
+//                     2. CONTAINING 3 BUILD FILES FOR OTHER PROJECTS
+//////////////////////////////////////////////////////////////////////////////////////
 const path = require("path");
 const express = require("express");
-const app = express(); // create express app
+const app = express(); 
 
-console.log('before hitt')
-//home route will redirect to the citizen-pannel route
-app.get("/", (req, res) => {
-  console.log('home route hitted')
-  res.redirect('/citizen')
-});
-
-//middleware to server static files also
+// ═════════════════║🔰 THESE CODES ENSURES STATIC FILES IMPORT IN PROJECT 🔰║══════════════════════
 app.use(express.static("citizen_build"));
 app.use(express.static("property_build"));
 app.use(express.static("water_build"));
@@ -19,16 +23,22 @@ app.use(express.static("dashboard_build"));
 app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
 app.use(express.static("swm_build"));
-app.use(express.static("csms_build"));
 app.use(express.static("tanker_admin_build"));
 app.use(express.static("tanker_citizen_build"));
-app.use(express.static("fee_mgmt_build"));
-app.use(express.static("csms_madhupur_build"));
 app.use(express.static("marriage_build"));
 app.use(express.static("reporting_build"));
+
+app.use(express.static("csms_build"));
+app.use(express.static("fee_mgmt_build"));
+app.use(express.static("csms_madhupur_build"));
+
 app.use(express.static("404"));
 
-//actual routes
+// ═════════════════║🔰 THESE ARE AVAILABLE ROUTES FOR THE PROJECT 🔰║══════════════════════
+//home route will redirect to the citizen-pannel route
+app.get("/", (req, res) => {
+  res.redirect('/citizen')
+});
 app.get("/citizen", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_build", "index.html"));
 });
@@ -119,14 +129,11 @@ app.get("/reporting", (req, res) => {
 app.get("/reporting/*", (req, res) => {
   res.sendFile(path.join(__dirname, "reporting_build", "index.html"));
 });
-
-// Catch-all route handler for unmatched routes
 app.get("*", (req, res) => {
-  // Send a 404 response for any unmatched routes
   res.status(404).sendFile(path.join(__dirname, "./404/404.html"));
 });
 
-// start express server on port 80
+// ═════════════════║🔰 THIS CODE BLOCK STARTS THE SERVER AT PORT 80 🔰║══════════════════════
 app.listen(80, () => {
   console.log("server started on port 80");
 });
