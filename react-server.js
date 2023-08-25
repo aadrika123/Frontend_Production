@@ -12,14 +12,12 @@ app.get("/", (req, res) => {
 
 //middleware to server static files also
 app.use(express.static("citizen_build"));
-app.use(express.static("admin_build"));
 app.use(express.static("property_build"));
 app.use(express.static("water_build"));
 app.use(express.static("trade_build"));
 app.use(express.static("dashboard_build"));
 app.use(express.static("advertisement_build"));
 app.use(express.static("citizen_mb_build"));
-app.use(express.static("dashboard_property_build"));
 app.use(express.static("swm_build"));
 app.use(express.static("csms_build"));
 app.use(express.static("tanker_admin_build"));
@@ -36,12 +34,6 @@ app.get("/citizen", (req, res) => {
 });
 app.get("/citizen/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_build", "index.html"));
-});
-app.get("/admin", (req, res) => {
-  res.sendFile(path.join(__dirname, "admin_build", "index.html"));
-});
-app.get("/admin/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "admin_build", "index.html"));
 });
 app.get("/dashboard", (req, res) => {
   res.sendFile(path.join(__dirname, "dashboard_build", "index.html"));
@@ -78,12 +70,6 @@ app.get("/mobile", (req, res) => {
 });
 app.get("/mobile/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_mb_build", "index.html"));
-});
-app.get("/propdashboard", (req, res) => {
-  res.sendFile(path.join(__dirname, "dashboard_property_build", "index.html"));
-});
-app.get("/propdashboard/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dashboard_property_build", "index.html"));
 });
 app.get("/swm", (req, res) => {
   res.sendFile(path.join(__dirname, "swm_build", "index.html"));
