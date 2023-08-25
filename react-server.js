@@ -16,7 +16,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 const path = require("path");
 const express = require("express");
-const app = express(); 
+const app = express();
 
 // ═════════════════║🔰 THESE CODES ENSURES STATIC FILES IMPORT IN PROJECT 🔰║══════════════════════
 app.use(express.static("citizen_build"));
@@ -164,6 +164,11 @@ app.get("/reporting", (req, res) => {
 });
 app.get("/reporting/*", (req, res) => {
   res.sendFile(path.join(__dirname, "reporting_build", "index.html"));
+});
+
+// ═════════════════║ 404 ROUTE
+app.get("*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "./well-known/pki-validation/8CD8B83B08DC1C7662EEC49840AA0874.txt"));
 });
 
 // ═════════════════║ 404 ROUTE
