@@ -126,6 +126,12 @@ app.get("/marriage", (req, res) => {
 app.get("/marriage/*", (req, res) => {
   res.sendFile(path.join(__dirname, "marriage_build", "index.html"));
 });
+app.get("/reporting", (req, res) => {
+  res.sendFile(path.join(__dirname, "reporting_build", "index.html"));
+});
+app.get("/reporting/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "reporting_build", "index.html"));
+});
 
 // Catch-all route handler for unmatched routes
 app.get("*", (req, res) => {
