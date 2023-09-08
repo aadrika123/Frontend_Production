@@ -27,6 +27,7 @@ app.use(express.static("tanker_citizen_build"));
 app.use(express.static("fee_mgmt_build"));
 app.use(express.static("csms_madhupur_build"));
 app.use(express.static("admin_control_build"));
+app.use(express.static("pet_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -124,6 +125,12 @@ app.get("/adminControl", (req, res) => {
 });
 app.get("/adminControl/*", (req, res) => {
   res.sendFile(path.join(__dirname, "admin_control_build", "index.html"));
+});
+app.get("/pet", (req, res) => {
+  res.sendFile(path.join(__dirname, "pet_build", "index.html"));
+});
+app.get("/pet/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "pet_build", "index.html"));
 });
 // start express server on port 80
 app.listen(80, () => {
