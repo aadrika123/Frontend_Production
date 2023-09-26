@@ -29,6 +29,7 @@ app.use(express.static("csms_madhupur_build"));
 app.use(express.static("admin_control_build"));
 app.use(express.static("pet_build"));
 app.use(express.static("marriage_build"));
+app.use(express.static("fine_penalty_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -138,6 +139,12 @@ app.get("/marriage", (req, res) => {
 });
 app.get("/marriage/*", (req, res) => {
   res.sendFile(path.join(__dirname, "marriage_build", "index.html"));
+});
+app.get("/fines", (req, res) => {
+  res.sendFile(path.join(__dirname, "fine_penalty_build", "index.html"));
+});
+app.get("/fines/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "fine_penalty_build", "index.html"));
 });
 // start express server on port 80
 app.listen(80, () => {
