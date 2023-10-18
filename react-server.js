@@ -163,10 +163,10 @@ app.get("/municipal-mobile/*", (req, res) => {
   res.sendFile(path.join(__dirname, "municipal_build", "index.html"));
 });
 
-app.get("/live-dashboard", (req, res) => {
+app.get("/liveDashboard", (req, res) => {
   res.sendFile(path.join(__dirname, "live_dashboard_build", "index.html"));
 });
-app.get("/live-dashboard/*", (req, res) => {
+app.get("/liveDashboard/*", (req, res) => {
   res.sendFile(path.join(__dirname, "live_dashboard_build", "index.html"));
 });
 
