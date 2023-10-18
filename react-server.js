@@ -32,7 +32,7 @@ app.use(express.static("marriage_build"));
 app.use(express.static("fine_penalty_build"));
 app.use(express.static("reporting_build"));
 app.use(express.static("municipal_build"));
-app.use(express.static("live_dashboard_build"));
+app.use(express.static("lv_dashboard_build"));
 // app.use(express.static(""));
 
 //actual routes
@@ -164,10 +164,10 @@ app.get("/municipal-mobile/*", (req, res) => {
 });
 
 app.get("/liveDashboard", (req, res) => {
-  res.sendFile(path.join(__dirname, "live_dashboard_build", "index.html"));
+  res.sendFile(path.join(__dirname, "lv_dashboard_build", "index.html"));
 });
 app.get("/liveDashboard/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "live_dashboard_build", "index.html"));
+  res.sendFile(path.join(__dirname, "lv_dashboard_build", "index.html"));
 });
 
 // start express server on port 80
