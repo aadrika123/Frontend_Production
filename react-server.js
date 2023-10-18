@@ -33,6 +33,7 @@ app.use(express.static("fine_penalty_build"));
 app.use(express.static("reporting_build"));
 app.use(express.static("municipal_build"));
 app.use(express.static("live_dashboard_build"));
+// app.use(express.static(""));
 
 //actual routes
 app.get("/citizen", (req, res) => {
