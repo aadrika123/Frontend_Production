@@ -33,6 +33,7 @@ app.use(express.static("fine_penalty_build"));
 app.use(express.static("reporting_build"));
 app.use(express.static("municipal_build"));
 app.use(express.static("lv_dashboard_build"));
+app.use(express.static("lv_dashboard_build2"));
 // app.use(express.static(""));
 
 //actual routes
@@ -168,6 +169,12 @@ app.get("/liveDashboard", (req, res) => {
 });
 app.get("/liveDashboard/*", (req, res) => {
   res.sendFile(path.join(__dirname, "lv_dashboard_build", "index.html"));
+});
+app.get("/liveDashboard2", (req, res) => {
+  res.sendFile(path.join(__dirname, "lv_dashboard_build2", "index.html"));
+});
+app.get("/liveDashboard2/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "lv_dashboard_build2", "index.html"));
 });
 
 // start express server on port 80
