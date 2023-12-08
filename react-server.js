@@ -34,6 +34,8 @@ app.use(express.static("reporting_build"));
 app.use(express.static("municipal_build"));
 app.use(express.static("lv_dashboard_build"));
 app.use(express.static("lv_dashboard_build2"));
+app.use(express.static("map_build"));
+
 // app.use(express.static(""));
 
 //actual routes
@@ -175,6 +177,13 @@ app.get("/liveDashboard2", (req, res) => {
 });
 app.get("/liveDashboard2/*", (req, res) => {
   res.sendFile(path.join(__dirname, "lv_dashboard_build2", "index.html"));
+});
+
+app.get("/property-map", (req, res) => {
+  res.sendFile(path.join(__dirname, "map_build", "index.html"));
+});
+app.get("/property-map/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "map_build", "index.html"));
 });
 
 // start express server on port 80
