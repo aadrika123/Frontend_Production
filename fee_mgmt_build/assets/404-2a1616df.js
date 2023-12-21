@@ -1,0 +1,1 @@
+import{j as e}from"./index-dd1288ad.js";function s(){return e.jsxs("div",{className:"flex flex-col items-center justify-center h-screen",children:[e.jsx("h1",{className:"text-4xl font-bold text-blue-600",children:"404"}),e.jsx("h2",{className:"text-2xl font-semibold text-blue-500",children:"Page Not Found !"})]})}export{s as default};
