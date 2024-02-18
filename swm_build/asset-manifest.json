@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ace28fa.css",
-    "main.js": "/static/js/main.db225f78.js",
+    "main.css": "/static/css/main.f1e22bbf.css",
+    "main.js": "/static/js/main.fbb3c793.js",
     "static/js/787.6f9d5313.chunk.js": "/static/js/787.6f9d5313.chunk.js",
     "static/media/rmclogo.png": "/static/media/rmclogo.d1d9f229f3fd3b66c19c.png",
     "static/media/sb.png": "/static/media/sb.802304d8644afb92cd25.png",
@@ -14,6 +14,7 @@
     "static/media/folders.png": "/static/media/folders.319591b31f73cbd3a24f.png",
     "static/media/money.png": "/static/media/money.7f03c00dbb4d45e3cda3.png",
     "static/media/team.png": "/static/media/team.1116aab82b2faae6a417.png",
+    "static/media/logo.svg": "/static/media/logo.0a32e54d6c9fa118ac8907978854c6be.svg",
     "static/media/complain.png": "/static/media/complain.cdf7485b38ddb7bc92cb.png",
     "static/media/notification.png": "/static/media/notification.9189e584356506caa9f2.png",
     "static/media/rupee.png": "/static/media/rupee.c0e86d9e1841edc4cb56.png",
@@ -31,12 +32,12 @@
     "static/media/geo.png": "/static/media/geo.54e03d4e40f3cd0e7d3f.png",
     "static/media/dustbin.png": "/static/media/dustbin.34791bc097087ddbe1ec.png",
     "index.html": "/index.html",
-    "main.4ace28fa.css.map": "/static/css/main.4ace28fa.css.map",
-    "main.db225f78.js.map": "/static/js/main.db225f78.js.map",
+    "main.f1e22bbf.css.map": "/static/css/main.f1e22bbf.css.map",
+    "main.fbb3c793.js.map": "/static/js/main.fbb3c793.js.map",
     "787.6f9d5313.chunk.js.map": "/static/js/787.6f9d5313.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ace28fa.css",
-    "static/js/main.db225f78.js"
+    "static/css/main.f1e22bbf.css",
+    "static/js/main.fbb3c793.js"
   ]
 }
