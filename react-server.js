@@ -54,6 +54,7 @@ app.use(express.static("fine_penalty_build"));
 app.use(express.static("pet_build"));
 app.use(express.static("lv_dashboard_build"));
 app.use(express.static("agency_build"));
+app.use(express.static("citizen_app_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -146,6 +147,12 @@ app.get("/agency", (req, res) => {
 });
 app.get("/agency/*", (req, res) => {
   res.sendFile(path.join(__dirname, "agency_build", "index.html"));
+});
+app.get("/juidco-app", (req, res) => {
+  res.sendFile(path.join(__dirname, "citizen_app_build", "index.html"));
+});
+app.get("/juidco-app/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "citizen_app_build", "index.html"));
 });
 
 
