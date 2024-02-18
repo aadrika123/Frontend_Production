@@ -53,6 +53,7 @@ app.use(express.static("admin_control_build"));
 app.use(express.static("fine_penalty_build"));
 app.use(express.static("pet_build"));
 app.use(express.static("lv_dashboard_build"));
+app.use(express.static("agency_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -139,6 +140,12 @@ app.get("/liveDashboard", (req, res) => {
 });
 app.get("/liveDashboard/*", (req, res) => {
   res.sendFile(path.join(__dirname, "lv_dashboard_build", "index.html"));
+});
+app.get("/agency", (req, res) => {
+  res.sendFile(path.join(__dirname, "agency_build", "index.html"));
+});
+app.get("/agency/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "agency_build", "index.html"));
 });
 
 
