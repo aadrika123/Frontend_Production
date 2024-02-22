@@ -1,1 +1,0 @@
-System.register(["./index-legacy-6iyHp-cg.js","./react-legacy--BT35GR-.js"],(function(e,t){"use strict";var n,r;return{setters:[function(e){n=e.j,r=e.P},null],execute:function(){e("default",(function(){return n.jsx(r,{title:"Water Tanker",children:n.jsx("div",{children:"Water Tanker"})})}))}}}));
