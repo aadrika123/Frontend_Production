@@ -1,0 +1,1 @@
+import{R as a,a as r}from"./react-304bc6bc.js";import{c}from"./index-2296f238.js";function f({title:t,status:e}){const{settitleText:s,settitleStatus:o}=a.useContext(c);r.useEffect(()=>{s(t),o(e)},[])}export{f as u};
