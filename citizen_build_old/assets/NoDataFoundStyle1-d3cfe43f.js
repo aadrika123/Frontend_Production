@@ -1,0 +1,1 @@
+import{j as e}from"./react-304bc6bc.js";const t=({message:r})=>e.jsx("div",{className:"my-5",children:e.jsx("div",{className:"text-center border border-red-200 rounded",children:r||"No Data Found!"})});export{t as N};
