@@ -1,0 +1,1 @@
+function a(){return{timeout:6e4,headers:{Authorization:`Bearer ${window.localStorage.getItem("citizen_token")}`,Accept:"application/json","Content-Type":"multipart/form-data","API-KEY":"eff41ef6-d430-4887-aa55-9fcf46c72c99"}}}export{a as A};
