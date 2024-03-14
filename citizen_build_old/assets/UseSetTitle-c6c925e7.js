@@ -1,1 +1,0 @@
-import{a,r}from"./router-50323722.js";import{c}from"./index-c4f87eb1.js";function f({title:t,status:e}){const{settitleText:s,settitleStatus:o}=a.useContext(c);r.useEffect(()=>{s(t),o(e)},[])}export{f as u};
