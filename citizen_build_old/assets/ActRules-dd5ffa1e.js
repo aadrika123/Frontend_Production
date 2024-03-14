@@ -1,1 +1,0 @@
-import{j as s}from"./mui-13ddac22.js";import"./router-07787e9d.js";import"./react-df1e779d.js";const e="/assets/ActRules-f53a0e8d.pdf",m=()=>s.jsx(s.Fragment,{children:s.jsx("iframe",{src:e,frameborder:"0",className:"h-screen w-full"})});export{m as default};
