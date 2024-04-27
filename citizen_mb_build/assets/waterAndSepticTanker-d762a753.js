@@ -1,0 +1,1 @@
+let e="https://jharkhandegovernance.com/auth",t={driverList:`${e}/api/water-tanker/driver-to-delivery-list`,submitDriverAction:`${e}/api/water-tanker/driver-update-delivery`,bookingDetails:`${e}/api/water-tanker/get-booking-details-by-id`,outbox:`${e}/api/water-tanker/driver-updated-list`};export{t as w};
