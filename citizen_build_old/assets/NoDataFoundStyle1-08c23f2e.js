@@ -1,1 +1,0 @@
-import{j as r}from"./mui-105b4636.js";import"./router-894402c5.js";const d=({message:e})=>r.jsx("div",{className:"my-5",children:r.jsx("div",{className:"text-center border border-red-200 rounded",children:e||"No Data Found!"})});export{d as N};
