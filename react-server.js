@@ -57,6 +57,7 @@ app.use(express.static("agency_build"));
 app.use(express.static("citizen_app_build"));
 app.use(express.static("userControl_build"));
 app.use(express.static("adminControl_build"));
+app.use(express.static("rig_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -167,6 +168,12 @@ app.get("/adminControl", (req, res) => {
 });
 app.get("/adminControl/*", (req, res) => {
   res.sendFile(path.join(__dirname, "adminControl_build", "index.html"));
+});
+app.get("/rig", (req, res) => {
+  res.sendFile(path.join(__dirname, "rig_build", "index.html"));
+});
+app.get("/rig/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "rig_build", "index.html"));
 });
 
 
