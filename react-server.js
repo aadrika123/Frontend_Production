@@ -59,6 +59,7 @@ app.use(express.static("userControl_build"));
 app.use(express.static("adminControl_build"));
 app.use(express.static("rig_build"));
 app.use(express.static("fines_app_build"));
+app.use(express.static("ptms_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -181,6 +182,12 @@ app.get("/fines-app", (req, res) => {
 });
 app.get("/fines-app/*", (req, res) => {
   res.sendFile(path.join(__dirname, "fines_app_build", "index.html"));
+});
+app.get("/ptms", (req, res) => {
+  res.sendFile(path.join(__dirname, "ptms_build", "index.html"));
+});
+app.get("/ptms/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "ptms_build", "index.html"));
 });
 
 
