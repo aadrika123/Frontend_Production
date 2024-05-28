@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0bd73fb3.css",
-    "main.js": "/static/js/main.4bd607e5.js",
+    "main.js": "/static/js/main.1b2e17d8.js",
     "static/js/453.2146ac35.chunk.js": "/static/js/453.2146ac35.chunk.js",
     "static/media/background_image_2.png": "/static/media/background_image_2.b7438221174ba8aa0fca.png",
     "static/media/background_image.png": "/static/media/background_image.e0674348c9c757d199b8.png",
@@ -9,11 +9,11 @@
     "static/media/RMC_LOGO.png": "/static/media/RMC_LOGO.57a3398074512921a611.png",
     "index.html": "/index.html",
     "main.0bd73fb3.css.map": "/static/css/main.0bd73fb3.css.map",
-    "main.4bd607e5.js.map": "/static/js/main.4bd607e5.js.map",
+    "main.1b2e17d8.js.map": "/static/js/main.1b2e17d8.js.map",
     "453.2146ac35.chunk.js.map": "/static/js/453.2146ac35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0bd73fb3.css",
-    "static/js/main.4bd607e5.js"
+    "static/js/main.1b2e17d8.js"
   ]
 }
