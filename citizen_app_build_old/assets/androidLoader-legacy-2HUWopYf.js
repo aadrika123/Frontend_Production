@@ -1,0 +1,1 @@
+System.register([],(function(e,t){"use strict";return{execute:function(){e("h",(function(){window.ReactNativeWebView&&window.ReactNativeWebView.postMessage(JSON.stringify({Key:"HREF_PAGE",keyData:{isLoader:"true"}}))}))}}}));
