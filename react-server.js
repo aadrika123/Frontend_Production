@@ -60,6 +60,7 @@ app.use(express.static("adminControl_build"));
 app.use(express.static("rig_build"));
 app.use(express.static("fines_app_build"));
 app.use(express.static("ptms_build"));
+app.use(express.static("parking_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -188,6 +189,12 @@ app.get("/ptms", (req, res) => {
 });
 app.get("/ptms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "ptms_build", "index.html"));
+});
+app.get("/parking", (req, res) => {
+  res.sendFile(path.join(__dirname, "parking_build", "index.html"));
+});
+app.get("/parking/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "parking_build", "index.html"));
 });
 
 
