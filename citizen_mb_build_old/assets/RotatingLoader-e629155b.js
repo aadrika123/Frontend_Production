@@ -1,1 +1,0 @@
-import{j as t}from"./index-fd80cd87.js";import{R as e}from"./Hourglass-e4a77f53.js";function i({}){return t("div",{className:"flex justify-center items-center h-screen",children:t(e,{strokeColor:"#000",width:35,strokeWidth:"3"})})}export{i as R};
