@@ -1,0 +1,1 @@
+import{a as i}from"./ProjectApiList-269fe0dc.js";import{l as e}from"./index-5c93c46a.js";const o=i.create();o.interceptors.response.use(t=>{var a;return((a=t==null?void 0:t.data)==null?void 0:a.authenticated)===!1&&(e(),window.location.href="/fines/login"),t.status===200&&t.data.success&&(t.data.message="Response modified!"),t},t=>Promise.reject(t));export{o as A};
