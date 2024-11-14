@@ -62,6 +62,7 @@ app.use(express.static("fines_app_build"));
 app.use(express.static("ptms_build"));
 app.use(express.static("parking_build"));
 app.use(express.static("septicTank_build"));
+app.use(express.static("financeCommission_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
