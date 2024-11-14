@@ -1,1 +1,0 @@
-import{k as a,bv as i,j as o,bC as l}from"./index-46c9757c.js";import{D as r}from"./DetailsFactory-476084b6.js";function u(){a("GB SAF Details");const{id:t}=i(),{get_GbSafDetailsById:s}=l(),e={api:{api_getAppicationFullDetail:{method:"post",url:s}},detailInfo:{title:"GBSAF Details"},filters:{topButtons:!1}};return o.jsx(r,{detailRules:e,id:t})}export{u as default};
