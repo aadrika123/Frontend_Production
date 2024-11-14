@@ -203,6 +203,12 @@ app.get("/septicTank", (req, res) => {
 app.get("/septicTank/*", (req, res) => {
   res.sendFile(path.join(__dirname, "septicTank_build", "index.html"));
 });
+app.get("/f-commission", (req, res) => {
+  res.sendFile(path.join(__dirname, "financeCommission_build", "index.html"));
+});
+app.get("/f-commission*", (req, res) => {
+  res.sendFile(path.join(__dirname, "financeCommission_build", "index.html"));
+});
 
 
 
