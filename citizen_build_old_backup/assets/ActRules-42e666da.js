@@ -1,0 +1,1 @@
+import{j as s}from"./react-304bc6bc.js";const e="/assets/ActRules-f53a0e8d.pdf",t=()=>s.jsx(s.Fragment,{children:s.jsx("iframe",{src:e,frameborder:"0",className:"h-screen w-full"})});export{t as default};
