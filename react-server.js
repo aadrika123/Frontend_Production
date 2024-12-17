@@ -64,6 +64,7 @@ app.use(express.static("parking_build"));
 app.use(express.static("septicTank_build"));
 app.use(express.static("financeCommission_build"));
 app.use(express.static("pms_build"));
+app.use(express.static("grievance_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -216,6 +217,12 @@ app.get("/procurement", (req, res) => {
 });
 app.get("/procurement*", (req, res) => {
   res.sendFile(path.join(__dirname, "pms_build", "index.html"));
+});
+app.get("/grievance", (req, res) => {
+  res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
+});
+app.get("/grievance*", (req, res) => {
+  res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
 
 
