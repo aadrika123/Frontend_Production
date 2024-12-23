@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:grievance_build/assets/module.config-DsJe31iN.js
 import{N as c}from"./index-CYZxF7_B.js";/**
-========
-import{N as c}from"./index-p2pCLBrI.js";/**
->>>>>>>> 66527312618d45ddb7de4ee4fe37c1db2e77bd02:grievance_build/assets/module.config-CQ8akCb7.js
  * @license lucide-react v0.428.0 - ISC
  *
  * This source code is licensed under the ISC license.

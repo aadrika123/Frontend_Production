@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:grievance_build/assets/index-CTVB8tbQ.js
 import{N as ge,u as pe,r,b as Z,o as ee,s as Q,g as N,j as e,F as se,t as ae,v as re,H as te,w as le,S as ce,x as de,O as fe,y as D,c as ne,d as R,k as oe,P as ie,_ as A,z as be,D as Ne,J as ye,B as Me,G as O,Q as we}from"./index-CYZxF7_B.js";import{P as ke}from"./index-qF0KnRQA.js";import{T as me,a as he,b as G,c as m,d as xe,e as h}from"./table-DsBZjDyn.js";import{g as ve}from"./services-KQnp_8oA.js";import{P as ue}from"./index-CaGsCTvD.js";import{S as je}from"./index-BgjfXLFj.js";import{D as Pe}from"./index-CS-PJGC4.js";/**
-========
-import{N as ge,u as pe,r,b as Z,o as ee,s as Q,g as N,j as e,F as se,t as ae,v as re,H as te,w as le,S as ce,x as de,O as fe,y as D,c as ne,d as R,k as oe,P as ie,_ as A,z as be,D as Ne,J as ye,B as Me,G as O,Q as we}from"./index-p2pCLBrI.js";import{P as ke}from"./index-Wwy2mjq6.js";import{T as me,a as he,b as G,c as m,d as xe,e as h}from"./table-Cqx_DoMM.js";import{g as ve}from"./services-KQnp_8oA.js";import{P as ue}from"./index-D-Q2ev6p.js";import{S as je}from"./index-QduVfC7I.js";import{D as Pe}from"./index-6gpnX1vk.js";/**
->>>>>>>> 66527312618d45ddb7de4ee4fe37c1db2e77bd02:grievance_build/assets/index-gQS5V3GI.js
  * @license lucide-react v0.428.0 - ISC
  *
  * This source code is licensed under the ISC license.
