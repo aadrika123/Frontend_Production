@@ -227,10 +227,10 @@ app.get("/grievance", (req, res) => {
 app.get("/grievance*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
 });
-app.get("/edak", (req, res) => {
+app.get("/e-dak", (req, res) => {
   res.sendFile(path.join(__dirname, "edak_build", "index.html"));
 });
-app.get("/edak/*", (req, res) => {
+app.get("/e-dak/*", (req, res) => {
   res.sendFile(path.join(__dirname, "edak_build", "index.html"));
 });
 app.get("/master-control", (req, res) => {
