@@ -1,0 +1,1 @@
+import{j as n,B as e,x as o}from"./index-DuC1bI5j.js";function i({isLoading:s,children:a,...t}){return n.jsx(e,{...t,disabled:s,children:s?n.jsxs(n.Fragment,{children:[n.jsx(o,{className:"mr-2 h-4 w-4 animate-spin"}),"Loading..."]}):a})}export{i as B};
