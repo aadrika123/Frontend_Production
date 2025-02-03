@@ -65,6 +65,7 @@ app.use(express.static("septicTank_build"));
 app.use(express.static("financeCommission_build"));
 app.use(express.static("pms_build"));
 app.use(express.static("grievance_build"));
+app.use(express.static("edak_build"));
 app.use(express.static("masterControl_build"));
 app.use(express.static("juidco_swm_app"));
 
@@ -225,6 +226,12 @@ app.get("/grievance", (req, res) => {
 });
 app.get("/grievance*", (req, res) => {
   res.sendFile(path.join(__dirname, "grievance_build", "index.html"));
+});
+app.get("/edak", (req, res) => {
+  res.sendFile(path.join(__dirname, "edak_build", "index.html"));
+});
+app.get("/edak/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "edak_build", "index.html"));
 });
 app.get("/master-control", (req, res) => {
   res.sendFile(path.join(__dirname, "masterControl_build", "index.html"));
