@@ -68,6 +68,9 @@ app.use(express.static("grievance_build"));
 app.use(express.static("edak_build"));
 app.use(express.static("masterControl_build"));
 app.use(express.static("juidco_swm_app"));
+app.use(express.static("parking_app_build"));
+app.use(express.static("mobile-lams_build"));
+
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -244,6 +247,18 @@ app.get("/juidco-swm-app", (req, res) => {
 });
 app.get("/juidco-swm-app*", (req, res) => {
   res.sendFile(path.join(__dirname, "juidco_swm_app", "index.html"));
+});
+app.get("/parking-app", (req, res) => {
+  res.sendFile(path.join(__dirname, "parking_app_build", "index.html"));
+});
+app.get("/parking-app*", (req, res) => {
+  res.sendFile(path.join(__dirname, "parking_app_build", "index.html"));
+});
+app.get("/mobile-lams", (req, res) => {
+  res.sendFile(path.join(__dirname, "mobile-lams_build", "index.html"));
+});
+app.get("/mobile-lams/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "mobile-lams_build", "index.html"));
 });
 
 
