@@ -1,0 +1,1 @@
+import{j as r}from"./mui-7fe93ce1.js";import{r as o}from"./router-e237bf16.js";import{B as t}from"./index-28833def.js";import"./axios-ab7cc016.js";import"./reactIcons-fd892024.js";import"./redux-20438136.js";import"./i18next-2edfafb0.js";function f(){return o.useEffect(()=>{window.location.href="/grievance"},[]),r.jsx("h1",{children:r.jsx(t,{})})}export{f as default};
