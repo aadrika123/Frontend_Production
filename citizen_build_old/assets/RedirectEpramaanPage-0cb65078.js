@@ -1,1 +1,0 @@
-import{u as a,r as t}from"./router-e237bf16.js";const n=()=>{const o=a(),e=new URLSearchParams(window.location.search).get("LogoutResponse");return console.log(e,"location..."),t.useEffect(()=>{e&&o("/")},[e]),null};export{n as default};
