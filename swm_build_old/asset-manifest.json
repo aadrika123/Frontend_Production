@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6fe87b5.css",
-    "main.js": "/static/js/main.32579b52.js",
+    "main.css": "/static/css/main.03a2b43a.css",
+    "main.js": "/static/js/main.548e93a1.js",
     "static/js/703.14add216.chunk.js": "/static/js/703.14add216.chunk.js",
     "static/js/513.6f752abb.chunk.js": "/static/js/513.6f752abb.chunk.js",
     "static/js/787.6f9d5313.chunk.js": "/static/js/787.6f9d5313.chunk.js",
@@ -32,7 +32,6 @@
     "static/media/role.png": "/static/media/role.4229bb02a71b34ea9d87.png",
     "static/media/deny.png": "/static/media/deny.e239dc1853896a915bcf.png",
     "static/media/category.png": "/static/media/category.06d503bfee7397d40e86.png",
-    "static/media/meeting.svg": "/static/media/meeting.fdbfed9bc703d7527542e1aa2d9eacb4.svg",
     "static/media/lock.png": "/static/media/lock.1121d560275826dcf08c.png",
     "static/media/search.svg": "/static/media/search.d723edf07b3a4df9be9647ffbe504ad1.svg",
     "static/media/report.png": "/static/media/report.a7f8cb24f808a708eaaf.png",
@@ -59,14 +58,14 @@
     "static/media/Down Icon 02.svg": "/static/media/Down Icon 02.5514dbab056477a834483cae739da843.svg",
     "static/media/OK.svg": "/static/media/OK.dd55d39b86ae38b9f97ab76d9cd9fecc.svg",
     "static/media/login.svg": "/static/media/login.389f4fd9ef5f48e6202313a1134e9c12.svg",
-    "main.c6fe87b5.css.map": "/static/css/main.c6fe87b5.css.map",
-    "main.32579b52.js.map": "/static/js/main.32579b52.js.map",
+    "main.03a2b43a.css.map": "/static/css/main.03a2b43a.css.map",
+    "main.548e93a1.js.map": "/static/js/main.548e93a1.js.map",
     "703.14add216.chunk.js.map": "/static/js/703.14add216.chunk.js.map",
     "513.6f752abb.chunk.js.map": "/static/js/513.6f752abb.chunk.js.map",
     "787.6f9d5313.chunk.js.map": "/static/js/787.6f9d5313.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6fe87b5.css",
-    "static/js/main.32579b52.js"
+    "static/css/main.03a2b43a.css",
+    "static/js/main.548e93a1.js"
   ]
 }
