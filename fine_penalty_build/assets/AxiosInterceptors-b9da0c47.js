@@ -1,0 +1,1 @@
+import{b as i,l as e}from"./index-d3ab915f.js";const o=i.create();o.interceptors.response.use(t=>{var a;return((a=t==null?void 0:t.data)==null?void 0:a.authenticated)===!1&&(e(),window.location.href="/fines/login"),t.status===200&&t.data.success&&(t.data.message="Response modified!"),t},t=>Promise.reject(t));export{o as A};
