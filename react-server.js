@@ -70,6 +70,7 @@ app.use(express.static("masterControl_build"));
 app.use(express.static("juidco_swm_app"));
 app.use(express.static("parking_app_build"));
 app.use(express.static("mobile-lams_build"));
+app.use(express.static("legal_build"));
 
 
 //actual routes
@@ -259,6 +260,12 @@ app.get("/mobile-lams", (req, res) => {
 });
 app.get("/mobile-lams/*", (req, res) => {
   res.sendFile(path.join(__dirname, "mobile-lams_build", "index.html"));
+});
+app.get("/legal", (req, res) => {
+  res.sendFile(path.join(__dirname, "legal_build", "index.html"));
+});
+app.get("/legal/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "legal_build", "index.html"));
 });
 
 
