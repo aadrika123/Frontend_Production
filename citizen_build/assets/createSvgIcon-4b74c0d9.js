@@ -1,0 +1,1 @@
+import{a as u}from"./router-56e993c5.js";import{y as a}from"./mui-13e90ce6.js";var e={};const o=u(a);var t;function f(){return t||(t=1,function(r){"use client";Object.defineProperty(r,"__esModule",{value:!0}),Object.defineProperty(r,"default",{enumerable:!0,get:function(){return n.createSvgIcon}});var n=o}(e)),e}export{f as r};
