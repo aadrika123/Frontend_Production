@@ -267,8 +267,9 @@ app.get("/legal", (req, res) => {
 app.get("/legal/*", (req, res) => {
   res.sendFile(path.join(__dirname, "legal_build", "index.html"));
 });
-
-
+app.get("/server-health", (req, res) => {
+  res.json({ sucess: true, message: 'Server is running Ok' })
+});
 // start express server on port 80
 app.listen(500, () => {
   console.log("server started on port 500");
