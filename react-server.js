@@ -269,10 +269,10 @@ app.get("/legal", (req, res) => {
 app.get("/legal/*", (req, res) => {
   res.sendFile(path.join(__dirname, "legal_build", "index.html"));
 });
-app.get("/market", (req, res) => {
+app.get("/market-management", (req, res) => {
   res.sendFile(path.join(__dirname, "market_build", "index.html"));
 });
-app.get("/market/*", (req, res) => {
+app.get("/market-management/*", (req, res) => {
   res.sendFile(path.join(__dirname, "market_build", "index.html"));
 });
 app.get("/municipal-rental", (req, res) => {
