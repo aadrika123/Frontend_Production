@@ -39,6 +39,7 @@ app.get("/", (req, res) => {
 
 //middleware to server static files also
 app.use(express.static("citizen_build"));
+app.use(express.static("citizen_landing_build"));
 app.use(express.static("admin_build"));
 app.use(express.static("property_build"));
 app.use(express.static("water_build"));
@@ -82,6 +83,12 @@ app.get("/citizen", (req, res) => {
 });
 app.get("/citizen/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_build", "index.html"));
+});
+app.get("/citizen-new", (req, res) => {
+  res.sendFile(path.join(__dirname, "citizen_landing_build", "index.html"));
+});
+app.get("/citizen-new/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "citizen_landing_build", "index.html"));
 });
 app.get("/fines", (req, res) => {
   res.sendFile(path.join(__dirname, "fine_penalty_build", "index.html"));
