@@ -84,10 +84,10 @@ app.get("/citizen", (req, res) => {
 app.get("/citizen/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_build", "index.html"));
 });
-app.get("/citizen-new", (req, res) => {
+app.get("/citizen-page", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_landing_build", "index.html"));
 });
-app.get("/citizen-new/*", (req, res) => {
+app.get("/citizen-page/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_landing_build", "index.html"));
 });
 app.get("/fines", (req, res) => {
