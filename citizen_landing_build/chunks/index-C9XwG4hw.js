@@ -1,0 +1,1 @@
+import{j as r}from"../vendor/data-layer-CuYvUO5a.js";import{O as o}from"./router-qp3icywG.js";import"../vendor/react-core-HnKmhvXM.js";function a(){return r.jsxs("div",{children:[r.jsx("h1",{children:"Dashboard Layout"}),r.jsx(o,{})]})}export{a as default};

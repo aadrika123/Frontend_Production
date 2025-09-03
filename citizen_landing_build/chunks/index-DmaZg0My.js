@@ -1,0 +1,1 @@
+import{j as e}from"../vendor/data-layer-CuYvUO5a.js";function n({children:n,title:i="",meta:t}){return e.jsxs("div",{children:[e.jsx("title",{children:`Juidco | ${i} `}),e.jsx("meta",{name:"description",content:t?.description}),e.jsx("link",{rel:"canonical",href:t?.canonical}),n]})}export{n as P};
