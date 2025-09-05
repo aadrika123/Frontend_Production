@@ -34,7 +34,7 @@ console.log('before hitt')
 //home route will redirect to the citizen-pannel route
 app.get("/", (req, res) => {
   console.log('home route hitted')
-  res.redirect('/citizen')
+  res.redirect('/citizen-page')
 });
 
 //middleware to server static files also
