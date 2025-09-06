@@ -1,1 +1,0 @@
-import{j as t}from"./mui-8bd1858b.js";import{ay as e,l as n}from"./index-bc271a4a.js";const s=()=>t.jsx(t.Fragment,{children:t.jsx("div",{className:"fixed bottom-10 text-center  justify-center items-center  w-screen print:hidden z-50",children:t.jsxs("button",{onClick:()=>window.print(),className:e,children:[t.jsx(n,{className:"inline text-lg"}),"print"]})})});export{s as P};
