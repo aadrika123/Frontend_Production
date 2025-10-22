@@ -75,6 +75,7 @@ app.use(express.static("legal_build"));
 app.use(express.static("market_management_build"));
 app.use(express.static("municipal_rental_build"));
 app.use(express.static("water_tanker_build"));
+app.use(express.static("hr_management_build"));
 
 
 //actual routes
@@ -294,6 +295,12 @@ app.get("/water-tanker", (req, res) => {
 });
 app.get("/water-tanker/*", (req, res) => {
   res.sendFile(path.join(__dirname, "water_tanker_build", "index.html"));
+});
+app.get("/hr-management", (req, res) => {
+  res.sendFile(path.join(__dirname, "hr_management_build", "index.html"));
+});
+app.get("/hr-management/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "hr_management_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: 'Server is running Ok' })
