@@ -1,0 +1,1 @@
+import{j as e}from"./index-BRRg9GsL.js";import{P as s}from"./index-Z5svc7vl.js";function r(){var t,a;return e.jsx(s,{title:"Dashboard",subTitle:"Welcome to the HRMS Dashboard",children:e.jsx("div",{className:"py-12",children:JSON.stringify((a=(t=location.pathname)==null?void 0:t.split("/"))==null?void 0:a[1])})})}export{r as default};
