@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.589a681c.css",
-    "main.js": "/static/js/main.f839c03f.js",
+    "main.js": "/static/js/main.71d94397.js",
     "static/js/213.5de1cc82.chunk.js": "/static/js/213.5de1cc82.chunk.js",
     "static/js/455.2d7769eb.chunk.js": "/static/js/455.2d7769eb.chunk.js",
     "static/js/453.2146ac35.chunk.js": "/static/js/453.2146ac35.chunk.js",
@@ -12,13 +12,13 @@
     "static/media/RMC_LOGO.png": "/static/media/RMC_LOGO.57a3398074512921a611.png",
     "index.html": "/index.html",
     "main.589a681c.css.map": "/static/css/main.589a681c.css.map",
-    "main.f839c03f.js.map": "/static/js/main.f839c03f.js.map",
+    "main.71d94397.js.map": "/static/js/main.71d94397.js.map",
     "213.5de1cc82.chunk.js.map": "/static/js/213.5de1cc82.chunk.js.map",
     "455.2d7769eb.chunk.js.map": "/static/js/455.2d7769eb.chunk.js.map",
     "453.2146ac35.chunk.js.map": "/static/js/453.2146ac35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.589a681c.css",
-    "static/js/main.f839c03f.js"
+    "static/js/main.71d94397.js"
   ]
 }
