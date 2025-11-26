@@ -312,6 +312,13 @@ app.get("/assets-tracking/*", (req, res) => {
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: 'Server is running Ok' })
 });
+
+app.use((req, res) => {
+  res.status(404).sendFile(
+    path.join(__dirname, "404", "404.html")
+  );
+});
+
 // start express server on port 80
 app.listen(500, () => {
   console.log("server started on port 500");
