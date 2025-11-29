@@ -310,10 +310,10 @@ app.get("/assets-tracking", (req, res) => {
 app.get("/assets-tracking/*", (req, res) => {
   res.sendFile(path.join(__dirname, "assets_tracking_build", "index.html"));
 });
-app.get("/htms", (req, res) => {
+app.get("/hrms", (req, res) => {
   res.sendFile(path.join(__dirname, "hrms_build", "index.html"));
 });
-app.get("/htms/*", (req, res) => {
+app.get("/hrms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "hrms_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
