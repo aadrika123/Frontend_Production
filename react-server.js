@@ -78,6 +78,7 @@ app.use(express.static("water_tanker_build"));
 app.use(express.static("hr_management_build"));
 app.use(express.static("assets_tracking_build"));
 app.use(express.static("hrms_build"));
+app.use(express.static("settings_build"));
 
 
 //actual routes
@@ -315,6 +316,12 @@ app.get("/hrms", (req, res) => {
 });
 app.get("/hrms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "hrms_build", "index.html"));
+});
+app.get("/settings", (req, res) => {
+  res.sendFile(path.join(__dirname, "settings_build", "index.html"));
+});
+app.get("/settings/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "settings_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: 'Server is running Ok' })
