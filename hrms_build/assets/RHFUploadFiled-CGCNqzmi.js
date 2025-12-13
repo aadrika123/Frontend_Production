@@ -1,4 +1,4 @@
-import{f as a,j as e}from"./index-BdkJQCNA.js";import{u as d,C as o}from"./label-AYT56UjD.js";import{I as x}from"./input-BPgDixJD.js";/**
+import{i as a,j as e}from"./index-gg1gcrnM.js";import{u as d,C as o}from"./label-D2mqiOyI.js";import{I as x}from"./input-DHsygqWe.js";/**
  * @license lucide-react v0.428.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -33,4 +33,4 @@ import{f as a,j as e}from"./index-BdkJQCNA.js";import{u as d,C as o}from"./label
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const H=a("User",[["path",{d:"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2",key:"975kel"}],["circle",{cx:"12",cy:"7",r:"4",key:"17ys0d"}]]);function B({name:s,label:r,isDynamic:p,isRequired:i,...l}){const{control:n,setValue:y}=d();return e.jsx(o,{name:s,control:n,render:({field:{ref:c},fieldState:{error:t}})=>e.jsxs(e.Fragment,{children:[e.jsxs("label",{className:"text-gray-700 dark:text-gray-200",htmlFor:r,children:[r," ",i&&e.jsx("span",{className:"text-red-400",children:"*"})]}),e.jsx(x,{type:"file",onChange:h=>{y(s,h.target.files?h.target.files[0]:null)},ref:c,className:`mt-1 ${t?"border-red-400":null}`,...l}),t&&e.jsx("span",{className:"text-red-400 text-xs",children:t.message})]})})}export{g as B,M as H,j as M,v as P,B as R,C as S,H as U,u as a};
+ */const H=a("User",[["path",{d:"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2",key:"975kel"}],["circle",{cx:"12",cy:"7",r:"4",key:"17ys0d"}]]);function B({name:s,label:i,isDynamic:p,isRequired:h,...l}){const{control:n,setValue:y}=d();return e.jsx(o,{name:s,control:n,render:({field:{ref:c},fieldState:{error:t}})=>e.jsxs(e.Fragment,{children:[e.jsxs("label",{className:"text-gray-700 dark:text-gray-200",htmlFor:i,children:[i," ",h&&e.jsx("span",{className:"text-red-400",children:"*"})]}),e.jsx(x,{type:"file",onChange:r=>{y(s,r.target.files?r.target.files[0]:null)},ref:c,className:`mt-1 ${t?"border-red-400":null}`,...l}),t&&e.jsx("span",{className:"text-red-400 text-xs",children:t.message})]})})}export{g as B,M as H,j as M,v as P,B as R,C as S,H as U,u as a};
