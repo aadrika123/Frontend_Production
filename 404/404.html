@@ -5,49 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./404.css" />
-    <title>Document</title>
-</head>
-
-<body>
-    <section class="page_404">
-        <div class="container" style="width:100vw">
-            <div class="row">
-                <div class="col-sm-12 ">
-                    <div class="col-sm-10 col-sm-offset-1  text-center">
-                        <h1 class="head" style="text-align: center;">Jharkhand E-Governance</h1>
-
-                        <div class="four_zero_four_bg">
-                          
-                        </div>
-
-                        <div class="contant_box_404" style="text-align: center;">
-                            <h1 class="" style="text-align:center;font-size: 4rem;">404</h1>
-                            <h3 class="" style="text-align:center;margin-top: -40px;">Look like you're lost</h3>
-                            <p style="text-align:center">the page you are looking for is not available!</p>
-                         </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        function goTo(){
-            window.location.href='https://jharkhandegovernance.com/citizen-page'
-        }
-    </script>
-</body>
-
-</html> -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | Jharkhand E-Governance</title>
 
     <style>
@@ -60,13 +17,17 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(
-                    rgba(0, 70, 40, 0.7),
-                    rgba(0, 70, 40, 0.7)
+            background:
+                linear-gradient(
+                    rgba(0, 70, 40, 0.72),
+                    rgba(0, 70, 40, 0.72)
                 ),
-                url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1950&q=80");
+                /* url("patratu-valley.avif"); */
+                url("https://res.cloudinary.com/dgwhhrsfh/image/upload/v1765614429/patratu-valley_jmgeyj.avif");
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #e9f5ec;
         }
 
@@ -217,7 +178,6 @@
 </body>
 
 </html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -237,13 +197,15 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(
+            background:
+                linear-gradient(
                     rgba(0, 70, 40, 0.72),
                     rgba(0, 70, 40, 0.72)
                 ),
-                url("https://static.toiimg.com/thumb/98004018/Patratu-Valley-in-Jharkhand.jpg?width=1200&height=900");
+                url("https://res.cloudinary.com/dgwhhrsfh/image/upload/v1765614429/patratu-valley_jmgeyj.avif");
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             color: #e9f5ec;
         }
@@ -281,6 +243,18 @@
             color: #95d5b2;
             margin-bottom: 32px;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .leaf-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(149, 213, 178, 0.6);
         }
 
         .error-code {
@@ -353,6 +327,11 @@
             .error-text {
                 font-size: 1.35rem;
             }
+
+            .leaf-icon {
+                width: 30px;
+                height: 30px;
+            }
         }
     </style>
 </head>
@@ -361,7 +340,13 @@
     <section class="page_404">
         <div class="card">
             <div class="brand">Jharkhand E-Governance</div>
-            <div class="tagline">Johar Jharkhand 🌿</div>
+
+            <div class="tagline">
+                Johar Jharkhand
+                <img src="https://res.cloudinary.com/dgwhhrsfh/image/upload/v1765614569/jharkhand-logo_gxyhmy.png"
+                     alt="Jharkhand Nature"
+                     class="leaf-icon">
+            </div>
 
             <div class="error-code">404</div>
             <div class="error-text">Page Not Available</div>
@@ -389,10 +374,9 @@
 
     <script>
         function goToHome() {
-            window.location.href = "https://jharkhandegovernance.com/";
+            window.location.href = "https://jharkhandegovernance.com/citizen-page";
         }
     </script>
 </body>
 
 </html>
-
