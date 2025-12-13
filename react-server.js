@@ -24,17 +24,16 @@
 //   console.log("server started on port 80");
 // });
 
-
 // successfull react serve working code for react
 const path = require("path");
 const express = require("express");
 const app = express(); // create express app
 
-console.log('before hitt')
+console.log("before hitt");
 //home route will redirect to the citizen-pannel route
 app.get("/", (req, res) => {
-  console.log('home route hitted')
-  res.redirect('/citizen-page')
+  console.log("home route hitted");
+  res.redirect("/citizen-page");
 });
 
 //middleware to server static files also
@@ -61,6 +60,7 @@ app.use(express.static("adminControl_build"));
 app.use(express.static("rig_build"));
 app.use(express.static("fines_app_build"));
 app.use(express.static("ptms_build"));
+app.use(express.static("public_transport_build"));
 app.use(express.static("parking_build"));
 app.use(express.static("septicTank_build"));
 app.use(express.static("financeCommission_build"));
@@ -79,7 +79,6 @@ app.use(express.static("hr_management_build"));
 app.use(express.static("assets_tracking_build"));
 app.use(express.static("hrms_build"));
 app.use(express.static("settings_build"));
-
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -215,6 +214,12 @@ app.get("/ptms", (req, res) => {
 app.get("/ptms/*", (req, res) => {
   res.sendFile(path.join(__dirname, "ptms_build", "index.html"));
 });
+app.get("/public-transport", (req, res) => {
+  res.sendFile(path.join(__dirname, "public_transport_build", "index.html"));
+});
+app.get("/public-transport/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public_transport_build", "index.html"));
+});
 app.get("/parking", (req, res) => {
   res.sendFile(path.join(__dirname, "parking_build", "index.html"));
 });
@@ -324,13 +329,11 @@ app.get("/settings/*", (req, res) => {
   res.sendFile(path.join(__dirname, "settings_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
-  res.json({ sucess: true, message: 'Server is running Ok' })
+  res.json({ sucess: true, message: "Server is running Ok" });
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(
-    path.join(__dirname, "404", "404.html")
-  );
+  res.status(404).sendFile(path.join(__dirname, "404", "404.html"));
 });
 
 // start express server on port 80
