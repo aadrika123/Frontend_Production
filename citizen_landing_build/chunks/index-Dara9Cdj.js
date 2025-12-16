@@ -1,0 +1,1 @@
+import{j as e}from"../vendor/data-layer-CuYvUO5a.js";import{P as r}from"./index-DmaZg0My.js";import"./router-qp3icywG.js";import"../vendor/react-core-HnKmhvXM.js";function o(){return e.jsx(r,{title:"Home",meta:{description:"This is the home page",canonical:"/citizen/dashboard/home"},children:e.jsx("div",{children:"Home"})})}export{o as default};
