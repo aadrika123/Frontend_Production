@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | Jharkhand E-Governance</title>
+    <title>Maintenance | Jharkhand E-Governance</title>
 
     <style>
         * {
@@ -19,18 +19,18 @@
             min-height: 100vh;
             background:
                 linear-gradient(
-                    rgba(0, 70, 40, 0.72),
-                    rgba(0, 70, 40, 0.72)
+                    rgba(90, 10, 20, 0.78),
+                    rgba(90, 10, 20, 0.78)
                 ),
                 url("https://res.cloudinary.com/dgwhhrsfh/image/upload/v1765614429/patratu-valley_jmgeyj.avif");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #e9f5ec;
+            color: #fff1f2;
         }
 
-        .page_404 {
+        .page_maintenance {
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -39,15 +39,16 @@
         }
 
         .card {
-            background: rgba(8, 40, 25, 0.65);
-            backdrop-filter: blur(8px);
+            background: rgba(60, 10, 15, 0.72);
+            backdrop-filter: blur(10px);
             border-radius: 18px;
-            padding: 50px 35px;
+            padding: 50px 35px 42px;
             max-width: 540px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(100, 180, 140, 0.3);
+            box-shadow: 0 30px 65px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 180, 180, 0.35);
+            position: relative;
         }
 
         .brand {
@@ -55,12 +56,12 @@
             font-weight: 700;
             letter-spacing: 0.8px;
             margin-bottom: 6px;
-            color: #d8f3dc;
+            color: #ffe3e3;
         }
 
         .tagline {
             font-size: 1.15rem;
-            color: #95d5b2;
+            color: #ffb3b3;
             margin-bottom: 32px;
             font-weight: 600;
             display: flex;
@@ -74,77 +75,70 @@
             height: 40px;
             object-fit: cover;
             border-radius: 50%;
-            border: 2px solid rgba(149, 213, 178, 0.6);
+            border: 2px solid rgba(255, 180, 180, 0.6);
         }
 
-        .error-code {
-            font-size: 6.2rem;
-            font-weight: 800;
-            color: #74c69d;
-            line-height: 1;
+        .maintenance-icon {
+            font-size: 5.3rem;
+            margin-bottom: 12px;
         }
 
-        .error-text {
-            font-size: 1.7rem;
-            margin-top: -12px;
-            color: #d8f3dc;
+        .maintenance-text {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #ffd1d1;
         }
 
         .description {
             margin-top: 18px;
             font-size: 1rem;
-            color: #b7e4c7;
-            line-height: 1.6;
+            color: #ffe5e5;
+            line-height: 1.65;
         }
 
-        .btn-group {
-            margin-top: 34px;
+        /* 🔴 Progress Bar */
+        .progress-container {
+            margin-top: 32px;
+            height: 6px;
+            width: 100%;
+            background: rgba(255, 180, 180, 0.25);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 13px 30px;
-            margin: 8px;
-            border-radius: 32px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
-            transition: all 0.3s ease;
+        .progress-bar {
+            height: 100%;
+            width: 35%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #ffd1d1,
+                transparent
+            );
+            animation: loading 1.6s ease-in-out infinite;
         }
 
-        .btn-primary {
-            background: #52b788;
-            color: #081c15;
-        }
-
-        .btn-primary:hover {
-            background: #40916c;
-        }
-
-        .btn-secondary {
-            background: transparent;
-            border: 2px solid #95d5b2;
-            color: #d8f3dc;
-        }
-
-        .btn-secondary:hover {
-            background: #95d5b2;
-            color: #081c15;
+        @keyframes loading {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(300%);
+            }
         }
 
         .footer-text {
-            margin-top: 38px;
+            margin-top: 26px;
             font-size: 0.85rem;
-            color: #95d5b2;
+            color: #ffb3b3;
         }
 
         @media (max-width: 480px) {
-            .error-code {
-                font-size: 4.8rem;
+            .maintenance-icon {
+                font-size: 4.2rem;
             }
 
-            .error-text {
+            .maintenance-text {
                 font-size: 1.35rem;
             }
 
@@ -157,33 +151,31 @@
 </head>
 
 <body>
-    <section class="page_404">
+    <section class="page_maintenance">
         <div class="card">
             <div class="brand">Jharkhand E-Governance</div>
 
             <div class="tagline">
                 Johar Jharkhand
                 <img src="https://res.cloudinary.com/dgwhhrsfh/image/upload/v1765614569/jharkhand-logo_gxyhmy.png"
-                     alt="Jharkhand Nature"
+                     alt="Jharkhand Logo"
                      class="leaf-icon">
             </div>
 
-            <div class="error-code">404</div>
-            <div class="error-text">Page Not Available</div>
+            <div class="maintenance-icon">🛠️</div>
+            <div class="maintenance-text">Server Maintenance in Progress</div>
 
             <p class="description">
-                The page you are looking for may have been removed, renamed,
-                or is temporarily unavailable. Please return to the citizen
-                services portal to continue.
+                Our systems are temporarily unavailable due to scheduled
+                maintenance activities aimed at improving performance,
+                security, and reliability of services.
+                <br><br>
+                We appreciate your patience and cooperation.
             </p>
 
-            <div class="btn-group">
-                <button class="btn btn-primary" onclick="goToHome()">
-                    Go to Citizen Portal
-                </button>
-                <button class="btn btn-secondary" onclick="history.back()">
-                    Go Back
-                </button>
+            <!-- 🔴 Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar"></div>
             </div>
 
             <div class="footer-text">
@@ -191,12 +183,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        function goToHome() {
-            window.location.href = "https://jharkhandegovernance.com/citizen-page";
-        }
-    </script>
 </body>
 
 </html>
