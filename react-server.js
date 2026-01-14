@@ -79,6 +79,7 @@ app.use(express.static("hr_management_build"));
 app.use(express.static("assets_tracking_build"));
 app.use(express.static("hrms_build"));
 app.use(express.static("settings_build"));
+app.use(express.static("bug_tracking_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -327,6 +328,12 @@ app.get("/settings", (req, res) => {
 });
 app.get("/settings/*", (req, res) => {
   res.sendFile(path.join(__dirname, "settings_build", "index.html"));
+});
+app.get("/bug-tracking", (req, res) => {
+  res.sendFile(path.join(__dirname, "bug_tracking_build", "index.html"));
+});
+app.get("/bug-tracking/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "bug_tracking_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: "Server is running Ok" });
