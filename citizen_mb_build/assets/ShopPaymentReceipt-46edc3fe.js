@@ -1,0 +1,32 @@
+import{c as ae,R as he,b as n,j as i,F as ce}from"./index-d234e753.js";import{a as de}from"./useCustomQuery-6fc50d1c.js";import{R as Ne}from"./RentalApiList-91990935.js";import"./moment-a9aaa855.js";import"./ApiHeader2-b363f7b8.js";function xe(){var c,t,o,r,m,l,a,h,d,N,p,_,v,b,u,y,f,x,A,k,P,R,g,C,D,q,w,M,T,B,E,L,S,j,F,I,W,U,V,z,H,O;const{id:s}=ae(),{api_shop_receipt:te}=Ne(),{data:e,isLoading:pe,isError:_e}=de({api:te,config:{tranId:s},options:{enabled:!!s}}),oe=he.useCallback(()=>{var Q,Y,J,K,G,X,Z,$,ee,ne,ie,se;return((Q=e==null?void 0:e.data)==null?void 0:Q.payment_mode)==="CHEQUE"?"Mode: "+((Y=e==null?void 0:e.data)==null?void 0:Y.payment_mode)+`
+Cheque No: `+((J=e==null?void 0:e.data)==null?void 0:J.cheque_no)+`
+Cheque Date: `+((K=e==null?void 0:e.data)==null?void 0:K.cheque_date)+`
+Bank Name: `+((G=e==null?void 0:e.data)==null?void 0:G.bank_name)+`
+Branch Name: `+((X=e==null?void 0:e.data)==null?void 0:X.branch_name):((Z=e==null?void 0:e.data)==null?void 0:Z.payment_mode)==="DD"?"DD No: "+(($=e==null?void 0:e.data)==null?void 0:$.cheque_no)+`
+DD Date: `+((ee=e==null?void 0:e.data)==null?void 0:ee.cheque_date)+`
+Bank Name: `+((ne=e==null?void 0:e.data)==null?void 0:ne.bank_name)+`
+Branch Name: `+((ie=e==null?void 0:e.data)==null?void 0:ie.branch_name):"Mode: "+((se=e==null?void 0:e.data)==null?void 0:se.payment_mode)},[(c=e==null?void 0:e.data)==null?void 0:c.payment_mode]),re=((t=e==null?void 0:e.data)==null?void 0:t.website)||"https://egov.rsccl.in",me="  "+((o=e==null?void 0:e.data)==null?void 0:o.ulb_name)+`
+[C](Shop Payment Receipt)
+ 
+ 
+Receipt No: `+((r=e==null?void 0:e.data)==null?void 0:r.transaction_no)+`
+<b>Shop no: </b><b><font size="big">`+((m=e==null?void 0:e.data)==null?void 0:m.shop_no)+`</font></b>
+Allottee name: `+((l=e==null?void 0:e.data)==null?void 0:l.allottee)+`
+Market name: `+((a=e==null?void 0:e.data)==null?void 0:a.market_name)+`
+Address: `+((h=e==null?void 0:e.data)==null?void 0:h.address)+`
+Rate: `+((d=e==null?void 0:e.data)==null?void 0:d.rate)+`
+Contact no: `+((N=e==null?void 0:e.data)==null?void 0:N.contact_no)+`
+Last payment date: `+((p=e==null?void 0:e.data)==null?void 0:p.last_payment_date)+`
+Paid amount: `+((_=e==null?void 0:e.data)==null?void 0:_.last_payment_amount)+`
+In words: `+((v=e==null?void 0:e.data)==null?void 0:v.inWords)+`
+Paid Upto: `+((b=e==null?void 0:e.data)==null?void 0:b.payment_upto)+`
+`+oe()+`
+********************************
+Tc Name: `+((u=e==null?void 0:e.data)==null?void 0:u.reciever_name)+`
+Tc Mobile No: `+((y=e==null?void 0:e.data)==null?void 0:y.reciever_mobile)+`
+
+[C]Thank You!
+[C]For More Details Please
+[C]Visit:  `+re+`
+ 
+`,le=()=>{window.ReactNativeWebView&&window.ReactNativeWebView.postMessage(JSON.stringify({Key:"PRINT_FOR_BT_PRINTER",keyData:{charPerLine:32,printTxt:me}}))};return console.log(e==null?void 0:e.data),n("div",{className:"p-4",children:[i("div",{className:" border-dashed text-[14px]   text-gray-700  border-2 font-Lato  w-full p-3  mt-4 border-gray-700 ",children:i("div",{className:" text-justify font-poppins ",children:n("div",{className:" text-gray-700  text-xs",children:[i("div",{className:"text-center  font-semibold mt-5",children:((f=e==null?void 0:e.data)==null?void 0:f.ulb_name)||"NA"}),i("div",{className:"text-center ",children:"(Shop Payment Receipt)"}),n("div",{className:"mt-4",children:["Receipt No : ",((x=e==null?void 0:e.data)==null?void 0:x.transaction_no)||"NA"]}),n("div",{className:"",children:["Shop No: ",(A=e==null?void 0:e.data)==null?void 0:A.shop_no]}),n("div",{className:"",children:["Allottee Name : ",((k=e==null?void 0:e.data)==null?void 0:k.allottee)||"NA"]}),n("div",{className:"",children:["Market name: ",(P=e==null?void 0:e.data)==null?void 0:P.market_name]}),n("div",{className:"",children:["Address : ",(R=e==null?void 0:e.data)==null?void 0:R.address]}),n("div",{className:"",children:["Rate : ",(g=e==null?void 0:e.data)==null?void 0:g.rate]}),n("div",{className:"",children:["Mobile : ",(C=e==null?void 0:e.data)==null?void 0:C.contact_no]}),n("div",{className:"",children:["Last Payment Date : ",(D=e==null?void 0:e.data)==null?void 0:D.last_payment_date]}),n("div",{className:"",children:["Paid Amount : ",(q=e==null?void 0:e.data)==null?void 0:q.last_payment_amount]}),n("div",{className:"",children:["In Word : ",(w=e==null?void 0:e.data)==null?void 0:w.inWords]}),n("div",{className:"",children:["Mode : ",((M=e==null?void 0:e.data)==null?void 0:M.payment_mode)||"NA"]}),n("div",{className:"",children:["Paid Upto : ",(T=e==null?void 0:e.data)==null?void 0:T.payment_upto]}),((B=e==null?void 0:e.data)==null?void 0:B.payment_mode)=="CHEQUE"&&n(ce,{children:[n("div",{className:"",children:["Bank name : ",((E=e==null?void 0:e.data)==null?void 0:E.bank_name)||"NA"]}),n("div",{className:"",children:["Branch name : ",((L=e==null?void 0:e.data)==null?void 0:L.branch_name)||"NA"]}),n("div",{className:"",children:["Cheque no. : ",((S=e==null?void 0:e.data)==null?void 0:S.cheque_no)||"NA"]}),n("div",{className:"",children:["Cheque date : ",((j=e==null?void 0:e.data)==null?void 0:j.cheque_date)||"NA"]})]}),((F=e==null?void 0:e.data)==null?void 0:F.payment_mode)=="DD"&&n(ce,{children:[n("div",{className:"",children:["Bank name : ",((I=e==null?void 0:e.data)==null?void 0:I.bank_name)||"NA"]}),n("div",{className:"",children:["Branch name : ",((W=e==null?void 0:e.data)==null?void 0:W.branchName)||"NA"]}),n("div",{className:"",children:["Cheque no. : ",((U=e==null?void 0:e.data)==null?void 0:U.chequeNo)||"NA"]}),n("div",{className:"",children:["Cheque date : ",((V=e==null?void 0:e.data)==null?void 0:V.chequeDate)||"NA"]})]}),i("div",{className:"text-center mt-2",children:"****************************************************"}),n("div",{className:"",children:["Tc Name : ",(z=e==null?void 0:e.data)==null?void 0:z.reciever_name]}),n("div",{className:"",children:["Tc Mobile No. : ",(H=e==null?void 0:e.data)==null?void 0:H.reciever_mobile]}),i("div",{className:"text-center font-semibold capitalize mt-6",children:"Thank You!"}),i("div",{className:"text-center font-semibold  ",children:"For More Details Please"}),n("div",{className:"text-center font-semibold  mb-5",children:["Visit: ",((O=e==null?void 0:e.data)==null?void 0:O.website)||"https://egov.rsccl.in"]})]})})}),i("div",{className:"text-center mt-4 flex justify-center items-center gap-4",children:i("button",{className:"bg-blue-500 text-white px-4 py-1 rounded-md",onClick:()=>le(),children:"Print"})})]})}export{xe as default};
