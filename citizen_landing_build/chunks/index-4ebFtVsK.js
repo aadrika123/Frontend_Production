@@ -1,1 +1,0 @@
-import{j as r}from"../vendor/data-layer-D-mN4jNr.js";import{P as e}from"./index-DLnICXI7.js";import"./router-CukBMuo-.js";import"../vendor/react-core-DF3nNwgj.js";function t(){return r.jsx(e,{title:"Property",meta:{description:"This is the property page",canonical:"/citizen/dashboard/property"},children:r.jsx("div",{children:"Property"})})}export{t as default};
