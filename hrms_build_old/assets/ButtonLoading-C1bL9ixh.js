@@ -1,1 +1,0 @@
-import{j as s,B as a,$ as i}from"./index-UYY99J9q.js";function e({isLoading:e,children:n,...r}){return s.jsxs(a,{...r,disabled:e,children:[e&&s.jsx(i,{className:"mr-2 h-4 w-4 animate-spin"}),e?"Please wait...":n]})}export{e as B};
