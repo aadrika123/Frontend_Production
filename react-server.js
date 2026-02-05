@@ -81,6 +81,7 @@ app.use(express.static("hrms_build"));
 app.use(express.static("settings_build"));
 app.use(express.static("bug_tracking_build"));
 app.use(express.static("dms_build"));
+app.use(express.static("project_config_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -341,6 +342,12 @@ app.get("/dms-panel", (req, res) => {
 });
 app.get("/dms-panel/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dms_build", "index.html"));
+});
+app.get("/project-config", (req, res) => {
+  res.sendFile(path.join(__dirname, "project_config_build", "index.html"));
+});
+app.get("/project-config/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "project_config_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: "Server is running Ok" });
