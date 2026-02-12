@@ -1,0 +1,1 @@
+import{A as e,c as n,P as c}from"./index-b261dab5.js";function l(t){const{api_logout:s}=c();console.log("inside citizen logout hook"),e.post(s,{},n()).then(function(o){console.log("logout response via usesetlogout.",o)}).catch(function(o){console.log("logout success...")}).finally(()=>{t()})}export{l as u};
