@@ -83,6 +83,7 @@ app.use(express.static("bug_tracking_build"));
 app.use(express.static("dms_build"));
 app.use(express.static("project_config_build"));
 app.use(express.static("survey_app_build"));
+app.use(express.static("wt_crm_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -355,6 +356,12 @@ app.get("/survey-app", (req, res) => {
 });
 app.get("/survey-app/*", (req, res) => {
   res.sendFile(path.join(__dirname, "survey_app_build", "index.html"));
+});
+app.get("/sd-crm", (req, res) => {
+  res.sendFile(path.join(__dirname, "wt_crm_build", "index.html"));
+});
+app.get("/sd-crm/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "wt_crm_build", "index.html"));
 });
 app.get("/server-health", (req, res) => {
   res.json({ sucess: true, message: "Server is running Ok" });
