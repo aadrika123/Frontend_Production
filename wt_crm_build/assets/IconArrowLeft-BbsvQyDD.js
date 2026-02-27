@@ -1,0 +1,1 @@
+import{i as e}from"./index-CEXae_k2.js";var o=e("outline","arrow-left","IconArrowLeft",[["path",{d:"M5 12l14 0",key:"svg-0"}],["path",{d:"M5 12l6 6",key:"svg-1"}],["path",{d:"M5 12l6 -6",key:"svg-2"}]]);export{o as I};
