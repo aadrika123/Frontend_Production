@@ -1,0 +1,1 @@
+import{j as s}from"./vendor-CE9mMHzi.js";import{s as i}from"./ui-D2jdM9vS.js";import{B as r}from"./index-CXNGAN7w.js";function a({isLoading:a,children:e,...n}){return s.jsxs(r,{...n,disabled:a,children:[a&&s.jsx(i,{className:"mr-2 h-4 w-4 animate-spin"}),a?"Please wait...":e]})}export{a as B};

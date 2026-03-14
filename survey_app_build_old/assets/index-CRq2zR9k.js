@@ -1,1 +1,0 @@
-import{j as o}from"./vendor-DhZ6duBB.js";import{P as i}from"./index-Dzo2EG4Z.js";import"./index-DLRrtabT.js";import"./query-Ckf1eAgM.js";import"./ui-CsAjs1aB.js";import"./icons-Cum19bXs.js";import"./axios-Dos3PyFQ.js";import"./zustand-Bkrv3bPu.js";function r(){return o.jsx(i,{title:"Home",children:"Home"})}export{r as default};
