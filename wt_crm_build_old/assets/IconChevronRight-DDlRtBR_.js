@@ -1,1 +1,0 @@
-import{i as e}from"./index-ChGhtE1a.js";var t=e("outline","chevron-left","IconChevronLeft",[["path",{d:"M15 6l-6 6l6 6",key:"svg-0"}]]);var n=e("outline","chevron-right","IconChevronRight",[["path",{d:"M9 6l6 6l-6 6",key:"svg-0"}]]);export{t as I,n as a};
