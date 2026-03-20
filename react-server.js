@@ -341,6 +341,7 @@ app.get("/bug-tracking/*", (req, res) => {
 });
 app.get("/dms-panel", (req, res) => {
   res.sendFile(path.join(__dirname, "dms_build", "index.html"));
+  res.sendFile(path.join(__dirname, "dms_build", "index.html"));
 });
 app.get("/dms-panel/*", (req, res) => {
   res.sendFile(path.join(__dirname, "dms_build", "index.html"));
